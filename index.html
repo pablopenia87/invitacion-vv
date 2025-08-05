@@ -138,7 +138,7 @@
 <!-- NUEVA SECCIÓN: Contador -->
 <section class="event-info-counter">
   <h2>⏳ Falta para la fiesta</h2>
-  <div id="countdown" style="font-size: 1.6rem; margin-top: 15px; font-weight: bold; color: #d6336c;">
+  <div id="countdown" style="font-size: 1.6rem; margin-top: 15px; font-weight: bold; color: #d6336c; text-align: center; background-color: #333333; padding: 5px 0px;">
     Calculando...
   </div>
 </section>
@@ -180,7 +180,7 @@
       const minutes = Math.floor((diff / 1000 / 60) % 60);
       const seconds = Math.floor((diff / 1000) % 60);
   
-      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      countdown.innerHTML = `${days} días ${hours} horas ${minutes} min ${seconds} seg`;
     }
   
     updateCountdown();
@@ -188,6 +188,7 @@
   </script>
 </body>
 </html>
+
 
 
 
