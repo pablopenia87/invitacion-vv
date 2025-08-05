@@ -133,6 +133,16 @@
     <p><strong>🕗 Hora:</strong> 21:00 hs</p>
   </section>
 
+  <!-- ... (resto del código HTML como antes) -->
+
+<!-- NUEVA SECCIÓN: Contador -->
+<section class="event-info-counter">
+  <h2>⏳ Falta para la fiesta</h2>
+  <div id="countdown" style="font-size: 1.6rem; margin-top: 15px; font-weight: bold; color: #d6336c;">
+    Calculando...
+  </div>
+</section>
+
   <!-- Sección 4: Confirmación por WhatsApp -->
   <section class="whatsapp-section">
     <h2>Confirmá tu asistencia</h2>
@@ -151,8 +161,34 @@
     © 2025 - ¡Te esperamos con mucha alegría!
   </footer>
 
+  <!-- SCRIPTS -->
+  <script>
+    const countdown = document.getElementById("countdown");
+    const eventDate = new Date("2025-09-13T21:00:00");
+  
+    function updateCountdown() {
+      const now = new Date();
+      const diff = eventDate - now;
+  
+      if (diff <= 0) {
+        countdown.innerHTML = "🎉 ¡Ya comenzó la fiesta!";
+        return;
+      }
+  
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / 1000 / 60) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+  
+      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+  
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
+
 
 
 
