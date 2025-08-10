@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación a los 50 años de Vivi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+    .card {
+      background: white;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    h1 {
+      color: #ff6f61;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .date {
+      background: #ff6f61;
+      color: white;
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>¡Feliz 50, Vivi! 🎉</h1>
+    <p>
+      Hoy celebramos no solo un número, sino <strong>toda una vida llena de amor, alegría y momentos que nos unen como familia</strong>.  
+      Eres una persona especial que ha dejado huella en cada uno de nosotros, y este día es solo para ti ❤️
+    </p>
+    <p>
+      Te hemos preparado un festejo con todo nuestro cariño, para que disfrutes como mereces.
+    </p>
+    <div class="date">📅 3 de Septiembre</div>
+    <p style="margin-top: 20px; font-size: 1.2em;">
+      ¡Te esperamos para brindar por muchos años más!
+    </p>
+  </div>
+</body>
+</html>
